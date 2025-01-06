@@ -31,9 +31,9 @@ function Testimonials() {
         ]
     };
     return (
-        <div className="bg-dark-blue -mt-[1px] lg:pb-[210px] pb-80 relative">
+        <div className="bg-dark-blue -mt-[1px] xl:pb-[210px] lg:pb-40 md:pb-28 sm:24 pb-20 relative" id="testimonials">
             <div className="container max-w-[1140px] mx-auto max-xl:px-4">
-                <CommonHeading className="!pb-[40px]" title={'Testimonials'} />
+                <CommonHeading className="lg:!pb-[40px] md:!pb-8 !pb-5" title={'Testimonials'} />
                 <div className="xl:max-w-[1140px] lg:max-w-[770px] max-w-3xl mx-auto">
                     <Slider {...settings}>
                         {TESTIMONIALS_LIST.map((obj, i) => (

@@ -5,23 +5,23 @@ import profileImgThree from './../assets/images/png/slider-profile-img-3.png'
 export const HEADER_LIST = [
     {
         title: "About us",
-        link: "/about",
+        link: "#about",
     },
     {
         title: "Solutions",
-        link: "/solution",
+        link: "#solution",
     },
     {
         title: "Benefits",
-        link: "/benefit",
+        link: "#benefit",
     },
     {
         title: "Testimonials",
-        link: "/testimonials",
+        link: "#testimonials",
     },
     {
         title: "FAQs",
-        link: "/faq",
+        link: "#faq",
     }
 ];
 export const FAQ_LIST = [
