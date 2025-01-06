@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  font-family: "Outfit", serif;
+}
+
+.button-gradient {
+  background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
+}
+
+.linear-background {
+  background: linear-gradient(180deg, rgba(59, 40, 246, 0.22) 0%, rgba(59, 40, 246, 0) 100%);
+}
