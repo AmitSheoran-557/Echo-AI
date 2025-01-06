@@ -11,13 +11,13 @@ const Faq = () => {
     }
 
     return (
-        <div className='py-[105px] bg-dark-blue px-5 max-lg:py-20 max-md:py-16 max-sm:py-12'>
-            <CommonHeading className="!pb-[60px]" title={'FAQs'} />
-            <div className='max-w-[1022px] flex flex-col gap-6 mx-auto'>
+        <div className='-mt-[1px] bg-dark-blue px-4'>
+            <CommonHeading className="xl:!pb-[60px] lg:!pb-12 md:pb-9 sm:pb-7 pb-5" title={'FAQs'} />
+            <div className='max-w-[1022px] flex flex-col xl:gap-6 lg:gap-5 gap-4 mx-auto'>
                 {FAQ_LIST.map((item, index) => (
-                    <div key={index} className={`rounded-xl pb-6 border border-solid  ${active === index ? 'border-sky-blue' : 'border-white border-opacity-10'}`}>
-                        <button onClick={() => toggle(index)} className={`flex w-full pt-6 px-6 text-white justify-between bg-transparent items-center font-medium text-xl max-md:text-lg ${active === index ? 'pb-4' : ''}`}>{item.heading} <span className={`transition-all duration-300 ${active === index ? 'rotate-180 ' : ''}`}><DownArrow /></span></button>
-                        <p className={`text-white max-md:text-sm overflow-hidden transition-all  px-6 duration-300 ${active === index ? 'max-h-32' : 'max-h-0'}`}>{item.description}</p>
+                    <div key={index} className={`rounded-xl xl:pb-[21.5px] lg:pb-5 sm:pb-4 pb-3 border border-solid  ${active === index ? 'border-sky-blue' : 'border-white border-opacity-10'}`}>
+                        <button onClick={() => toggle(index)} className={`flex w-full xl:pt-[21.5px] lg:pt-5 sm:pt-4 pt-3 xl:px-6 lg:px-5 px-4 text-white justify-between text-start bg-transparent items-center font-medium lg:text-xl md:text-lg text-base ${active === index ? 'pb-4' : ''}`}> <span className='max-lg:pe-7'>{item.heading} </span><span className={`transition-all duration-300 ${active === index ? 'rotate-180 ' : ''}`}><DownArrow /></span></button>
+                        <p className={`text-white max-md:text-sm overflow-hidden transition-all  px-6 duration-300 ${active === index ? 'lg:max-h-32 max-h-56' : 'max-h-0'}`}>{item.description}</p>
                     </div>
                 ))}
             </div>

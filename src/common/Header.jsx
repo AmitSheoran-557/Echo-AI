@@ -22,8 +22,8 @@ const Header = () => {
                 </span>
             </button>
 
-            <img className='max-w-48 max-h-[72px]' src={pageLogo} alt="page-logo" />
-            <div className={`flex gap-[42px] !text-black max-lg:text-white ps-[41px] pe-[29px] py-[30px] lg:max-h-max max-lg:fixed max-lg:top-0 max-lg:h-full max-lg:w-full max-lg:flex-col max-lg:bg-black max-lg:duration-300 max-lg:justify-center max-lg:items-center z-40 ${open ? 'max-lg:left-0' : 'max-lg:left-full'}`}>
+            <img className='xl:max-w-48 lg:max-w-40 max-w-28 max-h-[72px]' src={pageLogo} alt="page-logo" />
+            <div className={`flex gap-[42px] !text-black max-lg:text-white lg:max-h-max max-lg:fixed max-lg:top-0 max-lg:h-full max-lg:w-full max-lg:flex-col max-lg:bg-black max-lg:duration-300 max-lg:justify-center max-lg:items-center z-40 ${open ? 'max-lg:left-0' : 'max-lg:left-full'}`}>
                 {HEADER_LIST.map((obj, i) => (
                     <div key={i}>
                         <a onClick={handleOpen} className='text-white' href={obj.link}>{obj.title}</a>

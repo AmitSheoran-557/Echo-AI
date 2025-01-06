@@ -11,3 +11,23 @@
 .linear-background {
   background: linear-gradient(180deg, rgba(59, 40, 246, 0.22) 0%, rgba(59, 40, 246, 0) 100%);
 }
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 24px !important;
+}
+
+.border-gradient {
+  border-right: 1px solid transparent;
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+}
+.border-gradient-2 {
+  border-top: 2px solid transparent;
+  border-image-source:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 47%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+}
